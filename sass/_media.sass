@@ -1,0 +1,730 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media (min-width: 1450px) and (max-width : 3000px)
+	.main 
+		.main__container--right img
+			top: -33vw
+			right: -51vw
+			width: 120vw
+		.main__container--left
+			.main__title
+				margin-top: 9vw
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+	body
+		font-size: 16px
+		line-height: 28px
+		letter-spacing: 0.16px
+	h1
+		font-size: 66px
+		line-height: 84px
+		letter-spacing: 2.64px
+	h2
+		font-size: 46px
+		line-height: 60px
+		letter-spacing: 1.84px
+	h3
+		font-size: 30px
+		line-height: 40px
+		letter-spacing: 1.2px
+	h4
+		font-size: 18px
+		line-height: 26px
+		letter-spacing: 0.72px
+	h5
+		font-size: 20px
+		line-height: 30px
+		letter-spacing: 0.2px
+	h6
+		font-size: 18px
+		line-height: 28px
+		letter-spacing: 0.18px
+	.container
+		max-width: 1150px
+		padding: 0 50px
+	.main-button
+		font-size: 14px
+		padding: 12px 30px
+	.secondary-button
+		font-size: 14px
+		padding: 16px 24px
+	.title__container
+		max-width: 500px
+	.header
+		padding: 0 4vw
+		.nav .menu--left .menu__dropdown .menu__link
+			font-size: 14px
+	.main
+		max-width: 1200px
+		padding: 9vw 40px 190px
+		.main__container--left .main__subtitle
+			margin-top: 10px
+			margin-bottom: 60px
+			max-width: 450px
+	.advantages .advantages__subtitle
+		margin-bottom: -30px
+	.testimonials
+		padding-top: 50px
+		.testimonials__items
+			width: 618px
+			&::after,
+			&::before
+				width: 161px
+				height: 118px
+			&::before
+				left: -109px
+				top: -62px
+			&::after
+				right: -109px
+				bottom: -62px
+	.cta
+		padding: 140px 50px
+	.about .about__items
+		margin-top: 40px
+		.about__item .about-item__title
+			font-size: 32px
+	.pricing .pricing__items
+		margin: 40px -20px 0
+		.pricing__item
+			padding: 40px
+			.pricing__list
+				font-size: 14px
+				line-height: 28px
+			.item__title
+				font-size: 22px
+			.cta__button
+				font-size: 11px
+				padding: 6px 29px
+			.price
+				font-size: 14px
+				span
+					font-size: 24px
+	.bidding
+		padding-bottom: 50px
+		.bidding__items
+			.bidding__item .bidding__content
+				max-width: 340px
+			.slick-dots 
+				.stage
+					font-size: 14px
+					line-height: 26px
+				a
+					font-size: 22px
+	.contacts
+		&::before
+			width: 200vw
+			height: 200vw
+			top: -71vw
+			right: -92vw
+		.title__container
+			margin-top: 122px
+			margin-bottom: 53px
+
+	.feedback
+		margin-top: 50px
+		margin-bottom: 100px
+		.title__container
+			max-width: 450px
+	.page-404
+		max-width: 1150px
+		padding: 13vw 40px 250px
+		.main__container--right img
+			top: -36vw
+			right: -56vw
+			max-width: 1700px
+	.seo
+		max-width: 77%
+		padding: 12vw 0 190px
+		.seo__container--right img
+			top: -600px
+			right: -60vw
+	.seo-content
+		max-width: 79%
+		.content--left
+			min-width: 60%
+	.footer
+		.footer__subtitle
+			font-size: 14px
+			line-height: 24px
+		.footer__column .contacts__title
+			font-size: 14px
+			.contact
+				font-size: 18px
+		.footer__column .menu__link
+			font-size: 14px
+			line-height: 24px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+	body
+		font-size: 14px
+		line-height: 26px
+		letter-spacing: 0.14px
+	h1
+		font-size: 56px
+		line-height: 70px
+		letter-spacing: 2.24px
+	h2
+		font-size: 46px
+		line-height: 60px
+		letter-spacing: 1.84px
+	h3
+		font-size: 30px
+		line-height: 40px
+		letter-spacing: 1.2px
+	h4
+		font-size: 18px
+		line-height: 26px
+		letter-spacing: 0.72px
+	h5
+		font-size: 20px
+		line-height: 30px
+		letter-spacing: 0.2px
+	h6
+		font-size: 18px
+		line-height: 28px
+		letter-spacing: 0.18px
+	.container
+		padding: 0 50px
+	.header
+		.nav
+			.menu__link
+				margin: 0
+			.menu--right
+				padding-left: 0
+
+	.bidding .bidding__items
+		flex-direction: column
+		.bidding__item
+			margin-top: 100px
+			flex-wrap: nowrap
+			justify-content: center
+			.bidding__content
+				margin-left: 50px
+			.bidding__image
+				margin: 50px 0 80px 0
+		.slick-list
+			order: 2
+		.slick-dots
+			flex-direction: row
+			position: relative
+			top: 0
+			margin-left: 0
+			justify-content: space-between
+			order: 0
+			padding: 0
+			&::before
+				content: ''
+				height: 1px
+				width: 92%
+				top: 40%
+				position: absolute
+				background-color: #fff
+				left: 50%
+				transform: translateX(-50%)
+			a
+				left: -20px
+				top: 4px
+			.slick-active button::before
+				background: transparent url(../img/bg/oval-vert.svg) no-repeat;
+				width: 52px
+				height: 81px
+				left: -13px
+				top: -14px
+			li:not(:last-child)::after
+				display: none
+			.stage
+				display: none
+	.testimonials 
+		.slick-prev:before
+			left: -50px
+		.slick-next:before
+			right: -50px
+	.cta.container
+		padding: 50px
+	.pricing
+		.title__container
+			margin-top: 90px
+			margin-bottom: 80px
+		.slick-dots
+			width: 70%
+			margin: 0 auto
+		.slick-prev
+			left: -15px
+			z-index: 10
+		.slick-next
+			right: -15px
+			z-index: 10
+	.feedback
+		flex-direction: column
+		.title__container
+			align-self: flex-start
+		.feedback__item
+			width: 100%
+		.form-wrap
+			padding: 40px
+	.seo .seo__container--right img
+		top: -53vw
+		right: -73vw
+	.skills
+		flex-direction: column
+		.skills__block
+			width: 100%
+			&.left
+				padding-right: 0
+			.title__container
+				width: 100%
+				max-width: unset
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.container
+		padding: 40px 10%
+	.title__container
+		margin-top: 55px
+	.header
+		padding: 0 3vw
+		.nav
+			.menu--left
+				display: none
+			.menu--right
+				.cta__button
+					margin-right: 45px
+				.toggle_menu
+					display: block
+					.sandwich
+	.main
+		flex-wrap: wrap
+		padding-top: 0
+		padding-bottom: 20vw
+		.main__container--left
+			text-align: center
+			margin: 0 auto
+			order: 2
+			max-width: 80%
+			.main__title
+				margin-top: 97px
+			.main__subtitle
+				max-width: unset
+		.main__container--right
+			order: 1
+			height: 60vw
+			img
+				top: -71vw
+				right: -124vw
+				width: 240vw
+	.advantages
+		.title__container
+			margin: 40px 0 65px
+		.advantages__items
+			margin-top: 40px
+			.advantages__item
+				display: flex
+				margin-right: 0
+				width: unset
+				align-items: center
+				justify-content: space-between
+				&:first-child
+					padding-left: 25px
+				img
+					margin-right: 60px
+	.sections-bg
+		background-size: 250%
+		background-position: -424px -200px
+	.testimonials 
+		.testimonials__items
+			width: 85%
+			&::before,
+			&::after,
+				width: 130px
+			&::before
+				left: -88px
+				top: -46px
+			&::after
+				right: -94px
+				bottom: -70px
+			.slick-next
+				right: -90px
+			.slick-prev
+				left: -90px
+			.slick-prev,
+			.slick-next
+				width: 37px
+				height: 24px
+			.testimonials__item
+				padding: 30px
+	.help .help__title
+		margin-top: 0
+	.cta::after
+		right: -65%
+	.cta.container
+		padding: 50px 70px
+		.cta--left 
+			.cta__title
+				max-width: 350px
+	.about .title__container
+		margin-top: 90px
+	.skills .skills__block .title__container
+		margin-top: -30px
+	.feedback
+		margin-top: -60px
+	.seo-content
+		.content--left
+			order: 2
+			padding-right: 0
+		.content--right
+			order: 1
+			.advantages__items .advantages__item img
+				max-width: 127px
+		.advantages__cta-block
+			margin: 70px 0
+			text-align: center
+	.footer
+		.footer__column.footer__contacts
+			.contacts__title
+				font-size: 12px
+			.contact
+				font-size: 16px
+
+	.feedback .form-wrap
+		margin: 0
+		padding: 30px
+	.contacts::before
+		width: 280vw
+		height: 280vw
+		top: -66vw
+		right: -124vw
+	.main.page-404
+		padding-top: 100px
+		flex-direction: column
+		.main__container--right img
+			top: -48vw
+			right: -105vw
+			width: 200vw
+	.content
+		.content--left
+			padding-right: 0
+			.content-cta
+				padding: 30px
+				flex-direction: column
+				align-items: flex-start !important
+			.main-button
+				margin-top: 20px
+		.content--right .advantages__items
+			flex-direction: column
+			.advantages__item
+				width: 100%
+				padding-left: 0
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 730px)
+	.seo
+		flex-direction: column
+		flex-wrap: wrap
+		padding: 50px 0
+		max-width: 90%
+		.seo__container--left
+			order: 2
+			padding-top: 80%
+			text-align: center
+			margin: 0 auto
+		.seo__container--right
+			order: 1
+			img
+				top: -71vw
+				right: -124vw
+				width: 240vw
+				max-width: unset
+		.secondary-button
+			margin-left: 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 580px)
+	body
+		font-size: 14px
+		line-height: 24px
+		letter-spacing: 0.14px
+	h1
+		font-size: 30px
+		line-height: 40px
+		letter-spacing: 1.2px
+	h2
+		font-size: 26px
+		line-height: 36px
+		letter-spacing: 1.04px
+	h3
+		font-size: 22px
+		line-height: 32px
+		letter-spacing: 0.88px
+	h4
+		font-size: 16px
+		line-height: 24px
+		letter-spacing: 0.64px
+	h5
+		font-size: 14px
+		line-height: 24px
+		letter-spacing: 0.14px
+	h6
+		font-size: 14px
+		line-height: 26px
+		letter-spacing: 0.14px
+	.main .main-button
+		float: right
+	.page-404 .main-button
+		float: none
+	.main .secondary-button
+		margin-left: 0
+	.container
+		padding: 10px 20px
+	.testimonials 
+		.slick-prev:before
+			left: -35px
+		.slick-next:before
+			right: -35px
+	.title__container
+		margin: 50px 0
+	.header
+		.nav
+			.menu--right
+				.signin,
+				.cta__button
+					display: none
+	.main .arrow-down
+		display: none
+	.mobile-menu
+		.top-links
+			display: flex
+		.dropdown__list
+			column-count: 1
+			text-align: center
+	.slick-arrow
+		display: none !important
+	.bidding
+		padding-bottom: 0
+		.bidding__items .bidding__item
+			margin-top: 40px
+			padding: 0
+			flex-wrap: wrap
+			margin-left: 10px
+			.bidding__content
+				margin-top: 20px
+				max-width: unset
+				margin-left: 0
+				.bidding__item-title
+					display: none
+			.bidding__container--top
+				display: flex
+				align-items: center
+				justify-content: space-around
+				width: 100%
+				.bidding__item-title
+					width: 50%
+					display: block
+					text-align: center
+			.bidding__image
+				margin: 50px 0 34px 10px
+				width: 85px
+				&::before
+					width: 170px
+					height: 135px
+					left: -36%
+				img
+					max-height: 45px
+	.sections-bg
+		background-size: 400%
+		background-position: 40% 1%
+	.help
+		padding: 80px 10px 0
+	.pricing .slick-dots
+		width: 100%
+	.feedback
+		margin-top: -10px
+		.feedback__item
+			margin-bottom: 10px
+	.contacts::before
+		width: 400%
+		height: 400%
+		top: -10%
+		right: -300%
+	.seo-content
+		max-width: 89%
+		margin-top: 40px
+		.content--left
+			.content-cta
+				text-align: center
+				background-position: 50% -46%
+				&.cta--large
+					padding-top: 120px
+		.content--right
+			.advantages__items .advantages__item
+				flex-wrap: wrap
+				img
+					margin: 25px 0
+			.advantages__cta-block
+				margin: 50px 0 70px
+
+	.footer .column-container,
+	.footer .menu
+		width: 100%
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.main-button
+		font-size: 11px
+		padding: 9px 30px
+	.secondary-button
+		font-size: 11px
+		&::before
+			width: 65%
+			height: 1px
+	body
+		font-size: 14px
+	.main
+		padding: 32vw 20px 0
+		.main__container--left
+			max-width: 100%
+			.main__title
+				margin-top: 50px
+			.main__subtitle
+				margin-bottom: 25px
+		.main__container--right
+			height: 30vw
+			img
+				top: -90vw
+	.advantages
+		.advantages__items
+			.advantages__item
+				flex-wrap: wrap
+				padding: 0
+				img
+					margin-left: 0
+					margin-bottom: 20px
+					max-width: 100px
+			.advantages__item:first-child
+				padding-left: 0
+	.bidding .bidding__items .slick-dots a
+		font-size: 16px
+	.faq
+		.faq__block
+			margin-top: 30px
+			.faq__title-container,
+			.item__text
+				padding: 15px 55px 15px 15px
+			.faq__arrow
+				padding: 15px
+			.faq__item
+				&::after
+					right: 50px
+			.item__content
+				padding-right: 0
+	.testimonials
+		padding-top: 0
+		.slick-prev:before,
+		.slick-next:before
+			display: none
+		.testimonials__items
+			width: 100%
+			margin-top: 50px
+			&::before,
+			&::after
+				display: none
+			.testimonials__item
+				padding: 20px
+	.cta
+		padding-top: 80%
+		&.container
+			padding: 40px
+		&::after
+			width: 100%
+			height: 100%
+			right: 0
+			top: 10%
+		.cta--left
+			text-align: center
+			.cta__title
+				margin: 30px auto
+				margin-top: 68vw
+	.footer
+		.footer__container
+			justify-content: center
+		.footer__column
+			margin-right: 0
+			width: 100%
+			&.footer__column--main
+				width: 100%
+			.menu__link
+				padding-left: 0
+				font-size: 16px
+			&.menu 
+				width: 100%
+				margin-right: 0
+	.about
+		.title__container
+			margin-bottom: -20px
+		.about__items .about__item .about-item__title
+			font-size: 29px
+			&::before
+				left: -12px
+				top: -17px
+	.pricing
+		&::before
+			background-size: cover
+			width: 200%
+			height: 200%
+			top: 0
+			right: -80%
+		.pricing__items .pricing__item
+			margin: 20px
+			padding: 25px
+			.pricing__list
+				margin-bottom: 30px
+			.price
+				font-size: 14px
+				span
+					font-size: 20px
+		.slick-dots
+			li
+				.stage
+					font-size: 9px
+					padding: 15px 0
+				&.slick-active .stage
+					font-size: 11px
+	.contacts .contacts__items 
+		.contacts__item
+			flex-direction: column
+			img
+				margin-bottom: 20px
+		&.emails
+			padding-left: 0
+			.contacts__item img
+				margin-left: 0
+			.content__container
+				margin-left: 0
+	.feedback
+		.feedback__item
+			margin-top: 0
+		.form-wrap .top input
+			width: 100%
+			margin: 20px 0
+			&:first-child
+				margin-right: 0
+	.main.page-404 .main__container--right img
+		top: -75vw
+	.content .content--right .advantages__cta-block
+		padding: 20px
+		text-align: center
+		.main__links
+			flex-direction: column
+		.sample
+			font-size: 11px
+			line-height: 1
+	.seo-content .content--right .advantages__cta-block .main__links .secondary-button
+		margin-left: 0
+		margin-top: 20px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+	.slick-dots
+		bottom: -65px
+		li
+			margin: 10px

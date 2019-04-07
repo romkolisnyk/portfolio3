@@ -1,0 +1,220 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	background-color: #fff
+	color: #1d1d1d
+
+
+ul
+	list-style: none
+
+a
+	text-decoration: none
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+h2
+	color: #1d1d1d
+	font-family: "Raleway"
+	font-size: 3.28em
+	font-weight: 900
+	line-height: 70px
+	text-transform: uppercase
+	letter-spacing: 0.89px
+
+/* .container
+	max-width: 1266px
+	margin: 0 auto */
+section
+	padding-top: 70px
+.header
+	padding: 5px 0
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.logo
+		img
+			width: 143px
+			height: 23px
+	.menu
+		display: flex
+		justify-content: space-between
+		.menu__column
+			display: flex
+			justify-content: space-around
+			.menu__item
+		.nav__item
+			a
+				color: #151515
+				font-family: "Open Sans"
+				font-size: 0.78em
+				font-weight: 700
+				text-transform: uppercase
+				letter-spacing: 0.99px
+				padding: 13px 30px
+			.button
+				border: 1px solid #1d2329
+.main
+	.container
+		display: flex
+		justify-content: space-around
+	.main__title
+		font-family: "Raleway"
+		font-size: 5em
+		font-weight: 900
+		line-height: 82px
+		text-transform: uppercase
+		letter-spacing: 1.11px
+		margin: 90px 0 0
+	.main__subtitle
+		font-family: Raleway
+		font-size: 1.43em
+		font-weight: 500
+		line-height: 30px
+		letter-spacing: 0.08px
+		text-transform: none
+		margin-bottom: 60px
+		margin-top: 10px
+		padding-right: 110px
+	.main__text
+		margin-left: 70px
+		margin-right: -60px
+	.main__buttons
+		.main__button
+			font-family: "Open Sans"
+			font-size: 1em
+			font-weight: 700
+			text-transform: uppercase
+			&.left
+				background-color: #270ea0
+				color: #ffffff
+				line-height: 55.74px
+				letter-spacing: 0.99px
+				padding: 1.2em 2.2em
+				margin-right: 4em
+			&.right
+				color: #000000
+				line-height: 43.73px
+				letter-spacing: 1.26px
+	.main__image
+		margin-right: -148px
+	.arrow-down
+		display: block
+		text-align: center
+.advantages
+	.container
+		margin: 0 190px
+	.advantages__title
+		margin-top: 30px
+		line-height: 60px
+		margin-bottom: 10px
+	.advantages__subtitle
+		font-size: 18px
+		font-weight: 500
+		line-height: 28px
+		letter-spacing: 0.07px
+	.advantages__items
+		display: flex
+		justify-content: space-between
+	.advantages__item
+		margin-top: 37px
+		img
+			width: 128px
+			height: 125px
+		.item__title
+			font-size: 18px
+			font-weight: 700
+			line-height: 26px
+			text-transform: uppercase
+			letter-spacing: 0.29px
+		.item__text
+			font-size: 16px
+			font-weight: 500
+			line-height: 28px
+			letter-spacing: 0.06px
+
+.bidding
+	background-image: url("../img/fon2.png")
+
+
+.footer
+	font-size: 1em
+	background-color: #515156
+	.footer__subtitle
+		color: #ffffff
+		font-weight: 500
+		line-height: 24px
+		letter-spacing: 0.06px
+	.contacts__item
+		font-family: "Open Sans"
+		.contacts__title
+			color: #a8a8a8
+			font-weight: 700
+			line-height: 26px
+			text-transform: uppercase
+			letter-spacing: 0.22px
+		a
+			color: #ffffff
+			font-size: 18px
+			font-weight: 700
+			line-height: 26px
+			letter-spacing: 0.29px
+	.menu__list
+		a
+			color: #b8b8b8
+			font-family: "Open Sans"
+			font-weight: 400
+			line-height: 24px
+			letter-spacing: 0.06px
+
+@import "media"
